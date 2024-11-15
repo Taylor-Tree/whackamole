@@ -23,7 +23,6 @@ def main():
                     if mole_location.collidepoint(mouse_x, mouse_y):
                         mole_x = random.randint(0, 19) * 32
                         mole_y = random.randint(0, 15) * 32
-                        print(mole_x, mole_y)
                         mole_location = mole_image.get_rect(topleft=(mole_x, mole_y))
                 if event.type == pygame.QUIT:
                     running = False
